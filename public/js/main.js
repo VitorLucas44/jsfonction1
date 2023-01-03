@@ -47,3 +47,28 @@ function exposant(x, y) {
 }
 console.log(exposant(5, 2));
 
+
+// exo8
+function capitalize(mot) {
+    return mot.charAt(0).toUpperCase() + mot.slice(1).toLowerCase();
+}
+console.log(capitalize("bonjour à tous"));
+
+
+// exo9
+function calcul(nbr1, operator, nbr2) {
+    switch (operator) {
+      case "+":
+        return nbr1 + nbr2;
+      case "-":
+        return nbr1 - nbr2;
+      case "*":
+        return nbr1 * nbr2;
+      case "/":
+        return nbr1 / nbr2;
+      default:
+        return "oprérattion non valide";
+    }
+}
+console.log(calcul(5, "+", 10));
+console.log(calcul(5, "*", 10));
